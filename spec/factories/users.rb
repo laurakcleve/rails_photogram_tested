@@ -3,6 +3,6 @@ FactoryGirl.define do
     email 'fancyfrank@gmail.com'
     user_name 'Arnie'
     password 'illbeback'
-    id 1    
+    sequence(:id) { |id| id }
   end
 end
