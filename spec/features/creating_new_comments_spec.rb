@@ -8,7 +8,7 @@ feature 'Creating comments' do
     sign_in_with user
     visit '/'
     fill_in 'Comment', with: ';P'
-    click_button 'Submit'
+    click_button 'submit'
     expect(page).to have_css("div.comments#{post.id}", text: ';P')
   end
 
